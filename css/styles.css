@@ -1,5 +1,7 @@
 body {
     font-family: 'Open Sans';
+    text-align: center;
+    text-decoration: none;
 }
 .gradient-background {
     background: linear-gradient(300deg, #DBE2EF, #3F72AF, #112D4E );
@@ -35,10 +37,16 @@ body {
     top: 0;
 
 }
-
 .flex-item-nav{
     color: #333;
     font-weight: 600;
+    padding: 3px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #DBE2EF;
+    font-style: italic;
     padding: 3px;
     text-decoration: none;
 }
@@ -70,7 +78,6 @@ body {
 }
 
 .introduction > * {
-    text-align: center;
     padding: 15px;
 }
 
@@ -80,18 +87,34 @@ body {
     padding-left: 30%;
     padding-bottom: 50px;
 }
-
+p{
+    margin: 0;
+}
+.other-shade{
+    background-color: #F9F7F7;
+}
 .company-name{
  font-size: 5rem;
 
 }
-span{
-    color: #001C30;
+
+.footer{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    color: #F9F7F7;
+    background-color: #3F72AF ;
 }
 @media (max-width: 768px) {
     .container-motto{
         flex-direction: column;
         height: auto;
+    }
+    .introduction > p{
+        text-align: justify;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 399px) {
