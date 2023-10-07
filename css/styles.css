@@ -1,0 +1,127 @@
+body {
+    font-family: 'Open Sans';
+    text-align: center;
+    text-decoration: none;
+}
+.gradient-background {
+    background: linear-gradient(300deg, #DBE2EF, #3F72AF, #112D4E );
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding-top: 45px;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container-navbar{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0); 
+    font-style: italic;
+    margin-top: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    min-width: 400px;
+    top: 0;
+
+}
+.flex-item-nav{
+    color: #333;
+    font-weight: 600;
+    padding: 3px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #DBE2EF;
+    font-style: italic;
+    padding: 3px;
+    text-decoration: none;
+}
+.container-motto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 20vh;
+    max-width: 100%;
+}
+
+.motto-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    grid-row: 3;
+    color: #DBE2EF;
+    font-weight: lighter;
+    grid-area: 3 / 1 / -1 /-1;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.introduction{
+    background-color: #DBE2EF;
+}
+
+.introduction > * {
+    padding: 15px;
+}
+
+.introduction > p{
+    text-align: justify;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 50px;
+}
+p{
+    margin: 0;
+}
+.other-shade{
+    background-color: #F9F7F7;
+}
+.company-name{
+ font-size: 5rem;
+
+}
+
+.footer{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    color: #F9F7F7;
+    background-color: #3F72AF ;
+}
+@media (max-width: 768px) {
+    .container-motto{
+        flex-direction: column;
+        height: auto;
+    }
+    .introduction > p{
+        text-align: justify;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 399px) {
+    .container-navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+}
+
